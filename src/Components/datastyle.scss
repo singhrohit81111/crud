@@ -1,0 +1,125 @@
+.dts {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .DataToShow {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 14px;
+
+        .d10 {
+            margin-left: 88%;
+            font-size: 17px;
+            font-weight: 600;
+            margin: 3px 8px 0px 86%;
+
+        }
+
+        .d10:hover {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .d1 {
+            font-size: 51px;
+            margin-top: 13px;
+            margin-bottom: 13px;
+            color: #534b4b;
+        }
+
+        .d2 {
+            table {
+
+                thead {
+                    font-size: 20px;
+                }
+
+                tbody {
+                    color: gray;
+                    font-weight: 700;
+
+                    .td1 {}
+
+                    .td2 {
+                        min-width: 7vw;
+                    }
+
+                    .td3 {
+                        min-width: 13vw;
+                    }
+
+                    .td4 {
+                        min-width: 7vw;
+                    }
+
+                    .td5 {
+                        min-width: 12vw;
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        button:hover {
+                            background-color: black;
+                            color: white;
+                            border-radius: 8px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .dts {
+
+        .DataToShow {
+
+            .d10 {}
+
+            .d1 {}
+
+            .d2 {}
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .dts {
+
+        .DataToShow {
+            max-width: 86vw;
+
+            .d10 {
+                margin: 3px 8px 0px 72%;
+            }
+
+            .d1 {
+                font-size: 43px;
+                margin-top: 2px;
+            }
+
+            .d2 {
+                table {
+                    thead {
+                        font-size: 13px;
+                    }
+
+                    tbody {
+                        font-size: 9px;
+
+                        button {
+                            font-size: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

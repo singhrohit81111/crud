@@ -1,0 +1,104 @@
+.create {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Comic Sans MS;
+    background-color: black;
+
+    .cr00 {
+        min-width: 36vw;
+        max-width: 40vw;
+        border: 1px solid black;
+        min-height: 44vh;
+        background-color: white;
+        border-radius: 14px;
+        font-size: 51px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+        color: #534b4b;
+
+        .cr1 {
+            font-size: 51px;
+            margin-top: 13px;
+            margin-bottom: 13px;
+            color: #534b4b;
+        }
+        @media screen and (max-width:480px){
+            .cr1{
+                font-size: 42px;
+            }
+        }
+
+        .cr2 {
+
+            form {
+                display: flex;
+                flex-direction: column;
+                max-width: 33vw;
+                margin-left: 25px;
+                gap: 5px;
+
+                input {
+                    line-height: 5vh;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    font-size: 16px;
+                }
+
+                button {
+                    width: 8vw;
+                    margin-left: 37%;
+                    height: 6vh;
+                    font-size: 19px;
+                    font-weight: 700;
+                    color: darkgray;
+                    margin-top: 15px;
+                }
+
+                button:hover {
+                    background-color: black;
+                    color: white;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+            }
+            @media only screen and (min-width:768px) and (max-width:1023px) {
+                form {
+                    max-width: 27vw;
+                    margin-left: 42px;
+
+                    input {
+                        font-size: 9px;
+                    }
+
+                    button {
+                        margin-left: 30%;
+                        font-size: 12px;
+                        margin-top: 15px;
+                        margin-bottom: 7px;
+                        width: 10vw;
+                    }
+                }
+            }
+
+
+            @media only screen and (max-width:480px) {
+                form {
+                    max-width: 29vw;
+
+                    input {
+                        font-size: 7px;
+                    }
+
+                    button {
+                        width: 15vw;
+                        font-size: 10px;
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+
+           
+        }
+    }
+}
